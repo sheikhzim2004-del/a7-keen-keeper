@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rakib Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "rakib.hossain@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "childhood friend"],
+    "bio": "We grew up in the same neighborhood and still play cricket on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@example.com",
+    "days_since_contact": 18,
+    "status": "almost due",
+    "tags": ["college"],
+    "bio": "Met in college during group projects. Still share study notes regularly.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "tanvir.ahmed@example.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["work"],
+    "bio": "Worked together in a startup. Still talk about tech and career growth.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 4,
+    "name": "Sadia Islam",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "sadia.islam@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["university", "project partner"],
+    "bio": "We were lab partners and still collaborate on small projects.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 5,
+    "name": "Mahmudul Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "mahmudul.hasan@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["gym"],
+    "bio": "We used to go to the gym together and motivate each other.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 6,
+    "name": "Ayesha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "ayesha.rahman@example.com",
+    "days_since_contact": 10,
+    "status": "on-track",
+    "tags": ["cousin", "family"],
+    "bio": "My cousin who lives in another city. We catch up on holidays.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 7,
+    "name": "Shuvo Roy",
+    "picture": "https://randomuser.me/api/portraits/men/52.jpg",
+    "email": "shuvo.roy@example.com",
+    "days_since_contact": 14,
+    "status": "almost due",
+    "tags": ["school", "old friend"],
+    "bio": "We studied in the same school and used to sit on the same bench.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 8,
+    "name": "Tania Akter",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "tania.akter@example.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["online friend"],
+    "bio": "Met through online gaming and now we regularly chat and play together.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  }
+]
