@@ -1,13 +1,14 @@
-import React from 'react';
 const facebookIcon = new URL('../../../assets/facebook.png', import.meta.url);
 const instagramIcon = new URL('../../../assets/instagram.png', import.meta.url);
 const twitterIcon = new URL('../../../assets/twitter.png', import.meta.url);
 
 
 const Footer = () => {
+
   return (
-    <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10">
-      <aside>
+    <footer className="footer footer-footer-vertical bg-[#244D3F] text-primary-content p-10">
+   <div className="footer-center footer flex flex-col space-y-6">
+       <aside>
         <h1 className='text-5xl text-white font-bold'>KeenKeeper</h1>
         <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
         
@@ -21,9 +22,10 @@ const Footer = () => {
           <a><img src={twitterIcon} alt="Twitter" /></a>
         </div>
       </nav>
-      <div>
-          <div className="divider divider-primary"></div>
-          <div className='flex justify-between w-full'>
+          <hr className="w-full h-[1px] bg-white border-none my-4" />
+   </div>
+      <div className="w-full container mx-auto">
+          <div className="w-full flex justify-between items-center flex-col md:flex-row">
             <p>© 2026 KeenKeeper. All rights reserved.</p>
             <div className='flex gap-2'>
               <a className="link link-hover">Privacy Policy</a>

@@ -1,9 +1,10 @@
-import { createBrowserRouter } from "react-router";
+
 import Homepage from "../pages/homepage/Homepage";
 import FriendDetails from "../pages/frienddetails/FriendDetails";
-import Stats from "../pages/stats/Stats";
 import MainLayout from "../layouts/MainLayout";
+import Stats from "../pages/stats/Stats";
 import Timeline from "../pages/timeline/Timeline";
+import { createBrowserRouter } from "react-router";
 
 
  export const router = createBrowserRouter([
@@ -27,9 +28,6 @@ import Timeline from "../pages/timeline/Timeline";
         path: 'timeline',
         element: <Timeline></Timeline>
       },
-      {
-        path: ''
-      }
     ]
   },
 ])
