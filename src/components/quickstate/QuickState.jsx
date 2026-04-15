@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuickState = () => {
     return (<>
-        <div className='flex justify-between text-center my-10 container mx-auto gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-between text-center my-10 container mx-auto gap-6'>
             <div className='p-8 shadow-lg rounded-2xl w-full'><h5 className='text-2xl'>10</h5><p>Total Friends</p></div>
             <div className='p-8  shadow-lg rounded-2xl w-full'><h5 className='text-2xl'>03</h5><p>On Track</p></div>
             <div className='p-8  shadow-lg rounded-2xl w-full'><h5 className='text-2xl'>06</h5><p>Need Attention</p></div>
