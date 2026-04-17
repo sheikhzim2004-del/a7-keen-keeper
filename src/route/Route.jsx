@@ -1,10 +1,11 @@
 
 import Homepage from "../pages/homepage/Homepage";
-import FriendDetails from "../pages/frienddetails/FriendDetails";
 import MainLayout from "../layouts/MainLayout";
 import Stats from "../pages/stats/Stats";
-import Timeline from "../pages/timeline/Timeline";
 import { createBrowserRouter } from "react-router";
+import Timeline from "../pages/timeline/Timeline";
+import FriendDetails from "../pages/homepage/friendDetails/FriendDetails";
+import ErrrorPage from "../errrorpage/ErrrorPage";
 
 
  export const router = createBrowserRouter([
@@ -17,8 +18,9 @@ import { createBrowserRouter } from "react-router";
         element: <Homepage></Homepage>
       },
       {
-        path: 'frienddetails',
-        element: <FriendDetails></FriendDetails>
+        path: 'frienddetails/:id',
+        element: <FriendDetails></FriendDetails>,
+        loader: () => fetch("/friendsData.json")
       },
       {
         path: 'stats',
@@ -28,6 +30,7 @@ import { createBrowserRouter } from "react-router";
         path: 'timeline',
         element: <Timeline></Timeline>
       },
-    ]
+    ],
+    errorElement: <ErrrorPage></ErrrorPage>
   },
 ])
