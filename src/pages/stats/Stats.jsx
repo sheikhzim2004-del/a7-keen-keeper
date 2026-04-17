@@ -3,12 +3,11 @@ import { PieChart, Pie, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { FriendContext } from '../../context/FriendContext';
 
 const Stats = () => {
-
   const { stored } = useContext(FriendContext);
 
-    if (stored.length === 0) {
+  if (stored.length === 0) {
     return (
-      <div className="w-full h-`[400px]` flex justify-center items-center">
+      <div className="w-full `h-[400px]` flex justify-center items-center">
         <h2 className="text-xl font-semibold text-gray-500">
           No activity selected
         </h2>
@@ -26,12 +25,10 @@ const Stats = () => {
     { name: 'Video', value: videoCount }
   ];
 
-  // 🎨 colors
   const COLORS = ['#00C49F', '#FFBB28', '#FF8042'];
 
   return (
     <div className="w-full `h-[400px]` flex justify-center items-center">
-
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
@@ -42,16 +39,13 @@ const Stats = () => {
             paddingAngle={5}
             label
           >
-            {
-              data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))
-            }
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
           </Pie>
           <Tooltip />
         </PieChart>
       </ResponsiveContainer>
-
     </div>
   );
 };
