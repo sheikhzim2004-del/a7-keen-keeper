@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BsThreeDots } from 'react-icons/bs';
 import { FaHome } from 'react-icons/fa';
 import { ImStatsDots } from 'react-icons/im';
 import { RiTimeLine } from 'react-icons/ri';
@@ -11,7 +12,7 @@ const Navbar = () => {
     <div className="bg-base-100 shadow p-3 flex justify-between items-center">
 
       <h1 className="text-xl font-bold">
-        <span className="font-black">Keen</span>Keeper
+        <span className="font-black">Keen</span><span className='text-green-500'>Keeper</span>
       </h1>
       <div className="hidden md:flex gap-4">
         <NavLink to={"/"} className={({ isActive }) =>
@@ -30,7 +31,7 @@ const Navbar = () => {
         }><ImStatsDots /> Stats</NavLink>
       </div>
       <div className="md:hidden">
-        <button onClick={() => setOpen(!open)}>⋮</button>
+        <button onClick={() => setOpen(!open)}><BsThreeDots className='mr-1'/></button>
       </div>
 
 

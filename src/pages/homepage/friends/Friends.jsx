@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import FriendCard from '../friendCard/FriendCard';
 
 
-const friendsPromiss = fetch("/public/friendsData.json").then(res => res.json());
+const friendsPromiss = fetch("/friendsData.json").then(res => res.json());
 
 const Friends = () => {
 
