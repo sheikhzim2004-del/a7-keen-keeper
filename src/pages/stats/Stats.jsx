@@ -7,9 +7,9 @@ const Stats = () => {
 
   if (stored.length === 0) {
     return (
-      <div className="w-full `h-[400px]` flex justify-center items-center">
+      <div className="w-full h-[400px] flex justify-center items-center">
         <h2 className="text-xl font-semibold text-gray-500">
-          No activity selected
+          No activity selected.
         </h2>
       </div>
     );
@@ -28,7 +28,7 @@ const Stats = () => {
   const COLORS = ['#00C49F', '#FFBB28', '#FF8042'];
 
   return (
-    <div className="w-full `h-[400px]` flex justify-center items-center">
+    <div className="w-full h-[400px] flex justify-center items-center">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
